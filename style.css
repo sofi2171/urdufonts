@@ -1,0 +1,942 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    line-height: 1.6;
+    color: #000;
+    background: #fff;
+    direction: ltr;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: #fff;
+    color: #000;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #eee;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-brand h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #666;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000;
+    padding: 120px 0 80px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #333;
+}
+
+.font-preview {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+.preview-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+/* Fonts Section */
+.fonts-section {
+    padding: 80px 0;
+    background: linear-gradient(rgba(248,249,250,0.95), rgba(248,249,250,0.95)), url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.fonts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.font-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.font-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.font-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.font-sample {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.font-info {
+    margin: 1rem 0;
+    color: #666;
+}
+
+.download-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.download-btn:hover {
+    background: #333;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    align-items: start;
+}
+
+.about-content {
+    width: 100%;
+}
+
+.sidebar-ad {
+    margin: 0;
+}
+
+@media (max-width: 968px) {
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .sidebar-ad {
+        margin: 20px auto;
+        max-width: 300px;
+    }
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info {
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-item {
+    margin: 2rem 0;
+}
+
+.contact-item h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contact-item a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.contact-item a:hover {
+    color: #666;
+}
+
+.contact-buttons {
+    margin-top: 2rem;
+}
+
+.contact-btn {
+    display: inline-block;
+    background: #000;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background 0.3s;
+}
+
+.contact-btn:hover {
+    background: #333;
+}
+
+/* Legal Sections */
+.legal-section {
+    padding: 60px 0;
+    background: white;
+    border-top: 1px solid #eee;
+}
+
+.legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.legal-content h3 {
+    color: #333;
+    margin: 2rem 0 1rem 0;
+}
+
+.legal-content p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        padding: 2rem 1rem;
+    }
+    
+    .contact-btn {
+        display: block;
+        margin: 10px auto;
+        width: 200px;
+        text-align: center;
+    }
+    
+    .legal-content {
+        padding: 0 20px;
+    }
+}
+
+/* Policy Modal */
+.policy-modal {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.policy-content {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.policy-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+    z-index: 3001;
+}
+
+.policy-close:hover {
+    color: #333;
+}
+
+.modal-text {
+    line-height: 1.6;
+    color: #333;
+}
+
+.modal-text h2 {
+    color: #000;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.modal-text h3 {
+    color: #333;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.modal-text p {
+    margin-bottom: 1rem;
+}
+
+.modal-text ul {
+    margin: 0.5rem 0 1rem 1.5rem;
+}
+
+.modal-text li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .policy-content {
+        padding: 20px;
+        margin: 10px;
+        max-height: 85vh;
+    }
+    
+    .policy-close {
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+    }
+    
+    .modal-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .modal-text h3 {
+        font-size: 1.2rem;
+    }
+}
+
+.about-text {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 2rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 10px 20px;
+    background: #555;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.footer-links a:hover {
+    background: #666;
+}
+
+.footer-contact {
+    margin-bottom: 2rem;
+}
+
+.footer-contact p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.footer-copyright {
+    border-top: 1px solid #555;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    
+    .nav-menu {
+        margin-top: 10px;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero {
+        padding: 100px 0 60px;
+        min-height: auto;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .preview-text {
+        font-size: 1.8rem;
+    }
+    
+    .fonts-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .font-card {
+        padding: 1.5rem;
+    }
+    
+    .font-sample {
+        font-size: 1.5rem;
+        min-height: 60px;
+    }
+    
+    .about-section div[style*="grid-template-columns"] {
+        display: block !important;
+    }
+    
+    .about-section .ad-banner {
+        margin: 2rem 0 !important;
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .footer-links a {
+        margin: 5px 0;
+        width: 200px;
+        text-align: center;
+    }
+    
+    .footer-contact p {
+        font-size: 1rem;
+        word-break: break-all;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .nav-menu {
+        gap: 0.5rem;
+    }
+    
+    .nav-menu a {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+    
+    .font-card {
+        padding: 1rem;
+    }
+    
+    .font-sample {
+        font-size: 1.3rem;
+        min-height: 50px;
+    }
+    
+    .download-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .footer-links a {
+        width: 180px;
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .footer-contact p {
+        font-size: 0.9rem;
+    }
+    
+    .ad-banner {
+        padding: 15px;
+    }
+    
+    .ad-banner img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ad Modal Mobile Responsive */
+.ad-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    animation: fadeIn 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.ad-content {
+    background: white;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: slideIn 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .ad-content {
+        max-width: 95%;
+        margin: 10px;
+    }
+    
+    .ad-header h3 {
+        font-size: 1rem;
+    }
+    
+    .ad-body {
+        padding: 15px;
+    }
+    
+    .sample-ad {
+        padding: 15px;
+    }
+    
+    .sample-ad h4 {
+        font-size: 1.1rem;
+    }
+    
+    .sample-ad img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .download-after-ad {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+.ad-header {
+    background: #f8f9fa;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.ad-header h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.ad-timer {
+    background: #ff4444;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    min-width: 30px;
+    text-align: center;
+}
+
+.ad-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.sample-ad {
+    padding: 20px;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.sample-ad h4 {
+    color: #4CAF50;
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+}
+
+.sample-ad p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.sample-ad img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.ad-footer {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.download-after-ad {
+    background: #ccc;
+    color: #666;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: not-allowed;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.download-after-ad:not(:disabled) {
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.download-after-ad:not(:disabled):hover {
+    background: #45a049;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Ad Placement Areas */
+.ad-banner {
+    background: #f8f9fa;
+    border: 2px dashed #ddd;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.ad-banner h4 {
+    color: #666;
+    margin: 0 0 10px 0;
+}
+
+.ad-banner p {
+    color: #999;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Monetag Interstitial Ad */
+.monetag-interstitial {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+.interstitial-content {
+    background: white;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    animation: slideIn 0.3s ease;
+}
+
+.ad-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+    z-index: 10000;
+}
+
+.ad-close:hover {
+    color: #333;
+}
+
+.interstitial-ad {
+    padding: 30px 20px 20px;
+}
+
+.interstitial-ad h3 {
+    color: #FF6B6B;
+    margin: 0 0 15px 0;
+    font-size: 1.4rem;
+}
+
+.interstitial-ad img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.interstitial-ad p {
+    color: #666;
+    margin: 15px 0;
+}
+
+.ad-cta {
+    background: #FF6B6B;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.ad-cta:hover {
+    background: #FF5252;
+}
+
+.skip-timer {
+    background: #f8f9fa;
+    padding: 15px;
+    border-top: 1px solid #eee;
+    border-radius: 0 0 15px 15px;
+}
+
+.skip-timer p {
+    margin: 0 0 10px 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+#skipBtn {
+    background: #ccc;
+    color: #666;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: not-allowed;
+    transition: all 0.3s;
+}
+
+#skipBtn:not(:disabled) {
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#skipBtn:not(:disabled):hover {
+    background: #45a049;
+}
+
+/* Monetag Banner Spaces */
+.monetag-banner {
+    margin: 20px 0;
+    text-align: center;
+    min-height: 90px;
+    background: #f8f9fa;
+    border: 1px dashed #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.monetag-banner::before {
+    content: "Monetag Ad Space - 728x90";
+    color: #999;
+    font-size: 0.9rem;
+}
