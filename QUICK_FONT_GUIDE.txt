@@ -1,0 +1,57 @@
+# Quick Font Download Links
+
+## Direct Download Sources:
+
+### 1. Noto Nastaliq Urdu (Google Fonts)
+- Link: https://fonts.google.com/noto/specimen/Noto+Nastaliq+Urdu
+- Click "Download family" button
+- Extract ZIP and copy .ttf file
+- Rename to: nastaliq.ttf
+
+### 2. Jameel Noori Nastaleeq
+- Search: "Jameel Noori Nastaleeq download"
+- Popular free Urdu font
+- Use for: nastaliq.ttf or naskh.ttf
+
+### 3. Pak Urdu Fonts
+- Search: "Pak Urdu fonts free download"
+- Multiple styles available
+- Use for different font types
+
+### 4. AlQalam Fonts
+- Search: "AlQalam Urdu fonts"
+- Professional quality fonts
+- Good for all styles
+
+## How to Replace:
+
+### Method 1: Direct Replace
+1. Download actual .ttf font file
+2. Go to: fonts monitag\urdu-fonts-website\assets\fonts\
+3. Delete placeholder file (e.g., nastaliq.ttf)
+4. Copy your downloaded .ttf file
+5. Rename it to match (e.g., nastaliq.ttf)
+
+### Method 2: Copy-Paste
+1. Keep placeholder file names
+2. Just paste your .ttf file over it
+3. Confirm replace when asked
+
+## File Names Must Match:
+✅ nastaliq.ttf
+✅ naskh.ttf
+✅ kufi.ttf
+✅ thuluth.ttf
+✅ diwani.ttf
+✅ ruqaa.ttf
+
+## Important:
+- File names are case-sensitive
+- Must be .ttf or .otf format
+- Keep file size reasonable (under 5MB)
+- Test download after replacing
+
+## Current Location:
+C:\Users\DELL\Desktop\fonts monitag\urdu-fonts-website\assets\fonts\
+
+Just drag and drop your TTF files here!
